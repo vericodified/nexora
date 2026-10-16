@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/nexora-BFC1tbax.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nexora</title>
+    <title>Nexora!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -38,21 +38,32 @@
       overflow-x: hidden;
     }
     </style>
-    <script type="module" crossorigin src="./assets/index-BOgqaulk.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Ddfl_3U9.css">
+    <script type="module" crossorigin src="./assets/index-CkD_krwi.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BQ2JTpB4.css">
   </head>
   <body>
   <nav class="flex z-10 fixed w-full bg-black/20 backdrop-blur-2xl flex-row">
     <a href="#" class="text-white flex items-center text-2xl relative [text-shadow:0_0_20px_#ffffff] font-semibold"><img href="#" src="./assets/nexora-BFC1tbax.png" class="w-20">NEXORA</a>
     <ul class="flex absolute max-[1200px]:hidden left-1/2 right-1/2 flex-row gap-10 self-center justify-center text-white">
-      <li class="[text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 transition-all duration-300 ease-in-out"><a href="#" class="text-green-400">Home</a></li>
-      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#">Services</a></li>
-      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#">Work</a></li>
-      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#">About</a></li>
-      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#">Contact</a></li>
+      <li class="[text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 transition-all duration-300 ease-in-out"><a href="/" class="text-green-400">Home</a></li>
+      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#services">Services</a></li>
+      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="Work.html">Work</a></li>
+      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#about">About</a></li>
+      <li class="hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="https://www.fiverr.com/elhamqareeb" target="_blank">Contact</a></li>
     </ul>
-    <a href="#" class="text-white flex h-10 w-35 rounded-md self-center relative max-[1200px]:hidden right-10 ml-auto justify-center items-center gap-3 border-green-500 border">Let's Talk<span class="material-symbols-outlined font-bold text-[15px] text-emerald-500">arrow_outward</span></a>
+    <a href="https://www.fiverr.com/elhamqareeb" class="text-white flex h-10 w-35 rounded-md self-center relative max-[1200px]:hidden right-10 ml-auto justify-center items-center gap-3 border-green-500 border">Let's Talk<span class="material-symbols-outlined font-bold text-[15px] text-emerald-500">arrow_outward</span></a>
     <button onclick="openSidebar()" class="hover:scale-110 transition-all duration-200 material-symbols-rounded text-white flex self-center text-4xl relative min-[1200px]:hidden right-7 ml-auto justify-center items-center">menu</button>
+  </nav>
+
+  <nav id="mobile_nav" class="transition-all duration-300 ease-in-out hidden translate-x-[130px] min-[1200px]:hidden z-10 h-full bg-black/20 backdrop-blur-2xl w-fit px-23 py-23 flex-col fixed top-0 right-0">
+    <button onclick="closeSidebar()" class="bg-white hover:bg-[#00bc7d] transition-all duration-300 hover:scale-110 mask-[url('close.svg')] mask-contain mask-no-repeat w-10 h-10 absolute top-5 left-10"></button>
+    <ul class="flex flex-col gap-10 self-center justify-center text-white">
+      <li class="inline-block [text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 transition-all duration-300 ease-in-out"><a href="/" class="text-green-400">Home</a></li>
+      <li class="inline-block hover:[text-shadow:0_0_10px_#4ADE80,0_0_20px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#services">Services</a></li>
+      <li class="inline-block hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="Work.html">Work</a></li>
+      <li class="inline-block hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#about">About</a></li>
+      <li class="inline-block hover:[text-shadow:0_0_10px_#4ADE80,0_0_30px_#4ADE80,0_0_40px_#4ADE80] hover:scale-110 hover:text-green-400 transition-all duration-300 ease-in-out"><a href="#">Contact</a></li>
+    </ul>
   </nav>
 
   <header>
@@ -77,7 +88,7 @@
         </div>
       </div>
         <div class="h-full reveal bottom-80 max-[720px]:mt-115 mr-15 max-[1200px]:ml-120 max-[720px]:ml-10 relative max-[1200px]:self-center self-end flex">
-          <div class="bg-[url(./assets/cardbackground.png)] max-[1200px]:h-65 max-[1200px]:w-90 bg-cover bg-center py-4 px-2 transform-[perspective(1300px)_rotateY(-18deg)_rotateX(12deg)_rotateZ(1deg)] w-150 h-110 border-[1.2px] [box-shadow:0_0_70px_-10px_#4ADE80] rounded-2xl border-white">
+          <div class="bg-[url(cardbackground.png)] max-[1200px]:h-65 max-[1200px]:w-90 bg-cover bg-center py-4 px-2 transform-[perspective(1300px)_rotateY(-18deg)_rotateX(12deg)_rotateZ(1deg)] w-150 h-110 border-[1.2px] [box-shadow:0_0_70px_-10px_#4ADE80] rounded-2xl border-white">
             <nav class="flex flex-row gap-3">
               <img href="#" src="./assets/nexora-BFC1tbax.png" class="cursor-pointer w-14"><a href="#" class="text-white flex self-center text-[13px] relative right-4 font-semibold">NEXORA</a>
               <ul class="flex flex-row max-[1200px]:hidden relative left-27 text-white text-[12px] self-center gap-4">
@@ -107,7 +118,7 @@
   </header>
   <main class="flex-col mt-6 flex justify-center h-full">
     <div class="flex-col text-center fadeup flex gap-3 justify-center items-center">
-    <h4 class="text-green-400 font-medium">WHAT WE DO</h4>
+    <h4 id="services" class="text-green-400 font-medium">WHAT WE DO</h4>
     <p class="text-3xl font-semibold max-[1200px]:text-[27px] text-white">Services That Drive Results</p>
     <p class="text-white/80 max-[1200px]:w-80 w-120">From design to development, we provide end-to-end solutions that helps your brand grow online.</p>
     </div>
@@ -167,7 +178,7 @@
         </div>
   </main>
 
-  <footer class="bg-[#0B1013] h-fit w-full flex flex-col mt-10 py-5 px-5">
+  <footer id="about" class="bg-[#0B1013] h-fit w-full flex flex-col mt-10 py-5 px-5">
 
     <div class="flex-row flex gap-30 max-[1200px]:grid max-[1200px]:grid-cols-[auto_2fr] max-[1200px]:self-center max-[720px]:flex-col max-[720px]:flex max-[720px]:gap-13 max-[720px]:items-start">
       
@@ -212,5 +223,28 @@
     <p class="text-white/40 text-[13.4px] font-medium mt-7 text-center">© 2026 Nexora. All rights reserved.</p>
 
   </footer>
+
+  <script>
+    const sidebar = document.getElementById('mobile_nav');
+
+    function openSidebar() {
+      sidebar.style.display = 'flex';
+
+      setTimeout(() => {
+        sidebar.style.opacity = '1';
+        sidebar.style.transform = 'translateX(-130px)';
+      }, 200);
+    }
+
+    function closeSidebar() {
+      sidebar.style.transform = 'translateX(130px)';
+
+      setTimeout(() => {
+        sidebar.style.display = 'none';
+        sidebar.style.opacity = '0';
+      }, 200);
+    }
+
+  </script>
   </body>
 </html>
